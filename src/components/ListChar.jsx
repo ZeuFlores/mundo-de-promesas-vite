@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ChardCard from './CharCard';
+import CharCard from './CharCard';
 
 const resultsUrl = 'https://rickandmortyapi.com/api/character';
 
@@ -18,7 +18,7 @@ export default function ListChar(){
 
     return (
        <div style={{display:'flex', flexWrap:'wrap'}}>
-       {chars.map(char=>(<ChardCard
+       {chars.map(char=>(<CharCard
        id={char.id}
        name={char.name}
        image={char.image}/>))}
